@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content=" initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="Shortcut Icon" href="" type="image/x-icon" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="format-detection" content="email=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/law.css" />
+		<!-- build:css /styles/base.css -->
+		<!-- endbuild -->
+		<title>会展邦</title>
+	</head>
+
+	<body>
+		<div class="main">
+			<!--<div class="title_bg">
+				<div class="title_bg_pad"></div>
+				<div class="logo"></div>
+			</div>-->
+			<div class="content">
+				<div class="content_pad"></div>
+				<div class="content_con">
+					<h1 class="red">会展邦深度战略合作律所</h1>
+					<h2 class="red">北京铭盾律师事务所将为每位会展邦认证用户提供专业法律服务</h2>
+					<div class="cell">
+						<h3 class="red"><i>1<span>.</span></i>会展邦免费增值服务：</h3>
+						<p>
+							<b class="red">免费电话咨询服务：</b>每年为每位认证用户提供<span class="red">5次</span>免费法律电话咨询服务；
+						</p>
+						<p>
+							<b class="red">免费法律培训服务：</b>会展邦为认证用户定期举办免费法律讲座。
+						</p>
+					</div>
+					<div class="cell">
+						<h3 class="red"><i>2<span>.</span></i>会展邦优惠法律服务：</h3>
+						<p><b class="red">优惠包年常法服务：</b>北京铭盾律师事务所 将以最优惠的价格（<b class="red">8000元/年</b>）为“会展邦”用户提供全面法律服务，具体包含以下内容：</p>
+						<p>
+							1. 咨询服务：无限次电话解答服务；
+						</p>
+						<p>
+							2. 律 师 函：每年出具<b class="red">3份</b>律师函，超出部分按照<b class="red">800元/份</b>；
+						</p>
+						<p class="clearfix">
+							3. 合同管理：审核或拟定合同共计<b class="red">10份</b>，每份不超过<b class="red">3000字</b>，每超出字数<b class="red">3000字</b>的视为新增一份，  超出数量范围的按照<b class="red">500元/份/3000字</b>内计算。
+						</p>
+					</div>
+					<div class="cell">
+						<p>
+							<b class="red">其他优惠法律事务：</b>投资并购 及诉讼等专项法律服务将在律所市场价基础上享受<b class="red">八折优惠</b>。
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="txt">
+					<p></p>
+					<p></p>
+					<p></p>
+					<p></p>
+				</div>
+				<div class="logo3"></div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/resize.js" ></script>
+		<script>
+			(function() {
+				
+				var doResize = function(){
+					var windowWidth = document.documentElement && document.documentElement.clientWidth || document.body.clientWidth || window.innerWidth;
+					var  r_size = windowWidth > 650 ? 1024 : 640;
+					var $pad = $('.content_pad');
+//					if(windowWidth>650){
+//						$pad.css('padding-bottom', ' 89.14%');
+//					}else if(windowWidth>400){
+//						$pad.css('padding-bottom', ' 89.14%');
+//					}
+					myResize(r_size);
+				}
+				$(window).resize(doResize);
+				doResize();
+				
+			})();
+			
+		</script>
+	</body>
+
+</html>

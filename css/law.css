@@ -1,0 +1,138 @@
+body{
+	font-size: 17.5px;
+	font-family: "微软雅黑";
+}
+.red{
+	color: #b10000;
+}
+.title_bg{
+	width: 100%;
+	position: relative;
+	z-index: 11;
+}
+.title_bg_pad{
+	width: 100%;
+	padding-bottom: 49%;
+	background: url(../img/law/law_title.png) no-repeat 0 0;
+	background-size: 100%;
+}
+.logo{
+	position: absolute;
+	top: 0;
+	right: 0;	
+	margin: 3% 3% 0 0;
+	background: url(../img/logo.png) no-repeat 0 0;
+	background-size: 100%;
+	width: 16.5%;
+	padding-bottom: 7%;
+}
+.content{
+	position: relative;
+	width: 100%;
+	background: url(../img/law/law_bg_1.png) no-repeat 0 0;
+	background-size: cover;
+	margin-top: -2%;
+	overflow: hidden;
+}
+.content_pad{
+	width: 100%;
+	padding-bottom: 89.14%;
+	background: url(../img/law/law_bg_2.png) no-repeat bottom right;
+	background-size: 29%;
+	bottom: 0;
+	right: 0;
+	
+}
+.content_con{
+	position: absolute;
+	top: 0;
+	left: 10%;
+	width: 80%;
+	margin-top: 2%;
+	height: 100%;
+}
+.content_con h1{
+	font-size: 221%;
+	margin: 4% 0 1% 0;
+}
+.content_con h2{
+	font-size: 157%;
+	margin: 0 0 1% 0;
+	font-style: normal;
+}
+.content_con h3{
+	font-size: 148%;
+	font-style: normal;
+}
+.content_con .cell{
+	margin-top: 5%;
+}
+.content_con .cell h3 i{
+	font-size: 257%;
+}
+.content_con .cell h3 i span{
+	font-style: normal;
+	font-family: arial;
+}
+.content_con .cell p{
+	font-size: 100%;
+	margin: 0 0 2% 7%;
+}
+.footer{
+	padding: 1.5% 0;
+	background: #30333a;
+	position: relative;
+	padding-bottom: 7%;
+	font-size: 12px;
+}
+.logo3{
+	width: 34%;
+	padding-bottom: 5%;
+	margin-right: 5%;
+	float: right;
+	background: url(../img/logo3.png) no-repeat bottom right;
+	background-size: 100%;
+}
+
+@media screen and (max-width: 650px) {
+	body{
+		font-size: 14.7px;
+	}
+	.content{
+		background: url(../img/law/law_bg_3.png) no-repeat bottom right;
+		background-size:100% ;
+	}
+	.content_pad{
+		padding-bottom: 115%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.content_pad{
+		padding-bottom: 130%;
+	}
+}
+@media screen and (max-width: 430px) {
+	.content_pad{
+		padding-bottom: 140%;
+	}
+}
+@media screen and (max-width: 370px) {
+	.content_pad{
+		padding-bottom: 150%;
+	}
+}
+@media screen and (max-width: 345px) {
+	.content_pad{
+		padding-bottom: 160%;
+	}
+}
+@media screen and (max-width: 325px) {
+	.content_pad{
+		padding-bottom: 165%;
+	}
+}
+
+
+
+

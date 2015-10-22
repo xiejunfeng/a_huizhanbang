@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content=" initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="Shortcut Icon" href="" type="image/x-icon" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="format-detection" content="email=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/law.css" />
+		<!-- build:css /styles/base.css -->
+		<!-- endbuild -->
+		<title>会展邦</title>
+	</head>
+
+	<body>
+		<div class="main">
+			<!--<div class="title_bg">
+				<div class="title_bg_pad"></div>
+				<div class="logo"></div>
+			</div>-->
+			<div class="content">
+				<div class="content_pad"></div>
+				<div class="content_con">
+					<h1 class="red">会展邦深度战略合作律所</h1>
+					<h2>北京铭盾律师事务所将为每位会展邦认证用户提供专业法律服务</h2>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script>
+//			(function() {
+//				var s_resize = function() {
+//					var win_w = $(window).width();
+//					var ft = 17.5 / 1024 * win_w;
+//					$('body').css('font-size', ft);
+//				};
+//				$(window).resize(s_resize)
+//				s_resize();
+//			})();
+
+			(function() {
+				var scale = 1,
+					$wrapper = document.getElementsByTagName('body')[0],
+					$body = document.getElementsByTagName('body')[0],
+					windowWidth = document.documentElement && document.documentElement.clientWidth || document.body.clientWidth || window.innerWidth,
+					deviceAgent = navigator.userAgent.toLowerCase();
+
+				var setScale = function(scales) {
+					if ($wrapper.style.zoom == undefined) {
+						$wrapper.style.margin = '0px';
+						$wrapper.style.transformOrigin = 'top left';
+						$wrapper.style.transform = 'scale(' + scales + ')';
+						$wrapper.style.MozTransformOrigin = 'top left';
+						$wrapper.style.MozTransform = 'scale(' + scales + ')';
+					} else {
+						$wrapper.style.zoom = scales;
+					}
+					$body.style.display = 'block';
+
+				};
+
+
+				try {
+					if (deviceAgent.match(/(iphone|ipod|android|windows\s*phone|symbianos)/)) {
+						scale = parseFloat(windowWidth / 320);
+						if ($(window).height() > $(window).width()) {} else {
+							$(window).on('ortchange', function() { //当转屏的时候触发
+								if ($(window).height() > $(window).width()) {
+									windowWidth = document.documentElement && document.documentElement.clientWidth || document.body.clientWidth || window.innerWidth;
+									scale = parseFloat(windowWidth / 320);
+									setScale(scale);
+								}
+							});
+						}
+						//}
+
+						//微信2.3版本的处理
+						if (deviceAgent.match(/android\s*2.3/) && deviceAgent.match(/micromessenger/)) {
+							scale = 1;
+						}
+						if ($wrapper) {
+							setScale(scale);
+						}
+
+					} else {
+
+						if ($wrapper) {
+							if (deviceAgent.match(/(ipad)/)) {
+								windowWidth = document.documentElement && document.documentElement.clientWidth || document.body.clientWidth || window.innerWidth;
+								scale = parseFloat(windowWidth / 320);
+							} else {
+								scale = 1.2;
+							}
+							setScale(scale);
+						}
+					}
+				} catch (e) {
+					windowWidth = document.documentElement && document.documentElement.clientWidth || document.body.clientWidth || window.innerWidth;
+					scale = parseFloat(windowWidth / 320);
+					if ($wrapper) {
+						setScale(scale);
+					}
+				}
+			})();
+		</script>
+	</body>
+
+</html>
