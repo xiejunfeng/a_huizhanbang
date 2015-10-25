@@ -51,7 +51,7 @@ window.myResize = function(r_size_s) {
 					windowWidth = document.documentElement && document.documentElement.clientWidth || document.body.clientWidth || window.innerWidth;
 					scale = parseFloat(windowWidth / r_size);
 				} else {
-					scale = 1.2;
+					scale = parseFloat(windowWidth / r_size);
 				}
 				setScale(scale);
 			}

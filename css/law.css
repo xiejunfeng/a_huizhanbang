@@ -29,27 +29,16 @@ body{
 .content{
 	position: relative;
 	width: 100%;
-	background: url(../img/law/law_bg_1.png) no-repeat 0 0;
-	background-size: cover;
+	background: url(../img/law/law_bg_1.png) no-repeat left bottom;
+	background-size: 100%;
 	margin-top: -2%;
 	overflow: hidden;
 }
-.content_pad{
-	width: 100%;
-	padding-bottom: 89.14%;
-	background: url(../img/law/law_bg_2.png) no-repeat bottom right;
-	background-size: 29%;
-	bottom: 0;
-	right: 0;
-	
-}
+
 .content_con{
-	position: absolute;
-	top: 0;
-	left: 10%;
 	width: 80%;
-	margin-top: 2%;
-	height: 100%;
+	margin: 2% auto 0;
+	padding-bottom: 4%;
 }
 .content_con h1{
 	font-size: 221%;
@@ -82,55 +71,39 @@ body{
 	padding: 1.5% 0;
 	background: #30333a;
 	position: relative;
-	padding-bottom: 7%;
 	font-size: 12px;
 }
-.logo3{
+.footer .txt{
+	display: inline-block;
+	vertical-align: middle;
+	width: 55%;
+	margin-left: 5%;
+	color: #ffffff;
+}
+.footer .txt p{
+	margin: 0;
+	margin-bottom: 0.5%;
+}
+.logo_box{
 	width: 34%;
-	padding-bottom: 5%;
-	margin-right: 5%;
-	float: right;
-	background: url(../img/logo3.png) no-repeat bottom right;
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../img/line.png) no-repeat bottom right;
 	background-size: 100%;
 }
-
-@media screen and (max-width: 650px) {
-	body{
-		font-size: 14.7px;
-	}
-	.content{
-		background: url(../img/law/law_bg_3.png) no-repeat bottom right;
-		background-size:100% ;
-	}
-	.content_pad{
-		padding-bottom: 115%;
-	}
+.logo_box .logo_w{
+	float: left;
+	width: 33%;
+	background: url(../img/logo4.png) no-repeat bottom right;
+	background-size: 100%;
+	padding-bottom: 11%;
 }
-
-@media screen and (max-width: 500px) {
-	.content_pad{
-		padding-bottom: 130%;
-	}
-}
-@media screen and (max-width: 430px) {
-	.content_pad{
-		padding-bottom: 140%;
-	}
-}
-@media screen and (max-width: 370px) {
-	.content_pad{
-		padding-bottom: 150%;
-	}
-}
-@media screen and (max-width: 345px) {
-	.content_pad{
-		padding-bottom: 160%;
-	}
-}
-@media screen and (max-width: 325px) {
-	.content_pad{
-		padding-bottom: 165%;
-	}
+.logo_box .logo_r{
+	float: right;
+	width: 53%;
+	background: url(../img/logo5.png) no-repeat bottom right;
+	background-size: 100%;
+	padding-bottom: 11%;
 }
 
 

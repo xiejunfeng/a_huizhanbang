@@ -9,8 +9,8 @@
 		<meta name="format-detection" content="telephone=no" />
 		<meta name="format-detection" content="email=no" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/law.css" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="css/law.css" media="all" />
 		<!-- build:css /styles/base.css -->
 		<!-- endbuild -->
 		<title>会展邦</title>
@@ -18,10 +18,10 @@
 
 	<body>
 		<div class="main">
-			<!--<div class="title_bg">
+			<div class="title_bg">
 				<div class="title_bg_pad"></div>
 				<div class="logo"></div>
-			</div>-->
+			</div>
 			<div class="content">
 				<div class="content_pad"></div>
 				<div class="content_con">
@@ -58,35 +58,42 @@
 			</div>
 			<div class="footer">
 				<div class="txt">
-					<p></p>
-					<p></p>
-					<p></p>
-					<p></p>
+					<p>用户服务时间：9:30am~17:30pm</p>
+					<p>用户服务电话：010-50854545</p>
+					<p>京ICP备15018072号-1</p>
+					<p>www.yuukuo.com 2011-2015 © All Right Reserved.</p>
+					<p>柏杨云天（北京）企业咨询有限公司为会展邦产品提供合规和风控支持</p>
 				</div>
-				<div class="logo3"></div>
+				<div class="logo_box">
+					<div class="logo_w">
+						
+					</div>
+					<div class="logo_r"></div>
+				</div>
 			</div>
 		</div>
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/resize.js" ></script>
 		<script>
 			(function() {
-				
+				var timmer = null;
 				var doResize = function(){
 					var windowWidth = document.documentElement && document.documentElement.clientWidth || document.body.clientWidth || window.innerWidth;
-					var  r_size = windowWidth > 650 ? 1024 : 640;
+					var  r_size = windowWidth > 640 ? 1024 : 640;
 					var $pad = $('.content_pad');
-//					if(windowWidth>650){
-//						$pad.css('padding-bottom', ' 89.14%');
-//					}else if(windowWidth>400){
-//						$pad.css('padding-bottom', ' 89.14%');
-//					}
-					myResize(r_size);
+					if(windowWidth < 720){
+						$('.footer').find('p').hide();
+					}else{
+						$('.footer').find('p').show()
+					}
+					if(timmer)clearTimeout(timmer);
+					timmer = setTimeout(function(){
+						myResize(r_size);
+					},100);
 				}
 				$(window).resize(doResize);
 				doResize();
-				
 			})();
-			
 		</script>
 	</body>
 
