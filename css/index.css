@@ -294,9 +294,10 @@ body{
 	display: none;
 }
 .part3{
-	height: 1700px;
-	background: url(../img/index/part3_bg.png) repeat-x;
+	min-height: 1700px;
+	background: url(../img/index/part3_bg.png) repeat-x #d2e2ec;
 	padding-top: 120px;
+	padding-bottom: 100px;
 }
 .part3 .title{
 	width: 1500px;
@@ -320,6 +321,53 @@ body{
 	width: 275px;
 	height: 61px;
 	background: url(../img/index/part3_btn.png) center center no-repeat;
+}
+
+.part3 .intro_box{
+	padding-top: 60px;
+}
+.part3 .article{
+	color: #FFFFFF;
+	
+}
+.part3 .article1{
+	float: left;
+	width: 25%;
+	margin-left: 5%;
+}
+.part3 .article3{
+	float: right;
+	width: 25%;
+	margin-right: 5%;
+}
+.part3 .article2{
+	width: 30%;
+	margin: 0 auto;
+}
+.part3 .article .cell{
+	position: relative;
+	border-left: 3px solid #5489b9;
+	padding-bottom: 80px;
+}
+.part3 .article .cell:last-child{
+	border: none;
+	padding-bottom:0 ;
+}
+.part3 .article .num{
+	position: absolute;
+	left: -22px;
+	top: -2px;
+	display: block;
+	width: 43px;
+	height: 43px;
+	background: url(../img/index/num_1.png)  center center no-repeat;
+}
+.part3 .article p{
+	margin: 0 0 5px 0;
+	font-size: 20px;
+}
+.part3 .article .con_txt{
+	padding-left: 30px;
 }
 
 
