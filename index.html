@@ -4,19 +4,182 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name="viewport" content=" initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 		<link rel="Shortcut Icon" href="" type="image/x-icon" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="purple" />
 		<meta name="format-detection" content="telephone=no" />
 		<meta name="format-detection" content="email=no" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<link rel="stylesheet" type="text/css" href="css/normalize.css"  />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" media="all" />
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script type="text/javascript" src="js/resize.js" ></script>
+		<script type="text/javascript" src="js/xh.slide.js" ></script>
 		<!-- build:css /styles/base.css -->
 		<!-- endbuild -->
 		<title>会展邦</title>
 	</head>
 
 	<body>
-		<div></div>
-		
+		<div class="main">
+			<div class="part part1" id="part1">
+				<div class="banner">
+					<div class="banner_box" id="banner_box">
+						<ul id="BannerList">
+							<li>
+								<a href="">
+									<img src="img/index/banner1.jpg" />
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/index/banner1.jpg" />
+								</a>
+							</li>
+						</ul>
+						<div class="banner_btn_box" id="nums_list">
+							<span class="on"></span>
+							<span ></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="part2" class="part part2">
+				<div class="content">
+					<div class="title"></div>
+					<div class="timeless_wapper">
+						<a class="arrow" href="#"></a>
+						<div class="timeless_box">
+							<div class="timeline">
+								<div class="time_con yellow up" style="right: 20px;">
+									<div class="txt">会展邦最新供应商认证展示</div>
+									<a href="#" class="img">
+										<img src="img/index/test.png" />
+									</a>
+								</div>
+								<div class="time_add yellow" style="right: 100px;">
+									<div class="img"></div>
+									<div>29日</div>
+								</div>
+								
+								
+								<div class="time_con purple down" style="right: 225px;">
+									<div class="txt">会展邦最新成交案例代表大会</div>
+									<a href="#" class="img">
+										<img src="img/index/test.png" />
+									</a>
+								</div>
+								<div class="time_add purple down" style="right: 320px;">
+									<div>29日</div>
+									<div class="img"></div>
+								</div>
+								
+								<div class="time_con blue up up2" style="right: 410px;">
+									<div class="txt">会展邦最新成交案例代表大会</div>
+									<a href="#" class="img">
+										<img src="img/index/test.png" />
+									</a>
+								</div>
+								<div class="time_add blue up" style="right: 500px;">
+									<div class="img"></div>
+									<div>29日</div>
+								</div>
+								<div class="mouth blue" style="right: 470px;">8月</div>
+								
+								
+								
+								<div class="time_con orange down" style="right: 560px;">
+									<div class="txt">会展邦最新成交案例代表大会</div>
+									<a href="#" class="img">
+										<img src="img/index/test.png" />
+									</a>
+								</div>
+								<div class="time_add orange down" style="right: 650px;">
+									<div>29日</div>
+									<div class="img"></div>
+								</div>
+								
+								<div class="time_con black up" style="right: 720px;">
+									<div class="txt">会展邦最新成交案例代表大会</div>
+									<a href="#" class="img">
+										<img src="img/index/test.png" />
+									</a>
+								</div>
+								<div class="time_add black up" style="right: 810px;">
+									<div class="img"></div>
+									<div>29日</div>
+								</div>
+								
+								<div class="time_con pink down" style="right: 870px;">
+									<div class="txt">会展邦最新成交案例代表大会</div>
+									<a href="#" class="img">
+										<img src="img/index/test.png" />
+									</a>
+								</div>
+								<div class="time_add pink down" style="right: 960px;">
+									<div>29日</div>
+									<div class="img"></div>
+								</div>
+								
+								<div class="time_con green down" style="right: 1110px;">
+									<div class="txt">会展邦最新成交案例代表大会</div>
+									<a href="#" class="img">
+										<img src="img/index/test.png" />
+									</a>
+								</div>
+								<div class="time_add green down" style="right: 1200px;">
+									<div>29日</div>
+									<div class="img"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="part3 part" id="part3">
+				<div class="title"></div>
+				<div class="intro_img">
+					<a href="#" class="part3_skip"></a>
+				</div>
+				<div class="intro_box">
+					
+				</div>
+			</div>
+			<div class="silder_bar">
+				<a href="#part1" class="active">
+					<span></span>
+				</a>
+				<a href="#part2">
+					<span></span>
+				</a>
+				<a href="#part3">
+					<span></span>
+				</a>
+			</div>
+		</div>
+		<script>
+		//1902
+			$('#BannerList').Slide({
+				
+			});
+			(function() {
+				var timmer = null;
+				var doResize = function(){
+					var windowWidth = document.documentElement && document.documentElement.clientWidth || document.body.clientWidth || window.innerWidth;
+					var  r_size = 1920;
+					var $pad = $('.content_pad');
+					if(windowWidth < 720){
+						$('.footer').find('p').hide();
+					}else{
+						$('.footer').find('p').show()
+					}
+					if(timmer)clearTimeout(timmer);
+					timmer = setTimeout(function(){
+						myResize(r_size);
+					},100);
+				}
+				$(window).resize(doResize);
+				doResize();
+			})();
+		</script>
 
 	</body>
 
