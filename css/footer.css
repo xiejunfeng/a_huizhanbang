@@ -1,0 +1,46 @@
+.footer{
+	padding: 1.5% 0;
+	background: #30333a;
+	position: relative;
+	font-size: 12px;
+}
+.footer .txt{
+	display: inline-block;
+	vertical-align: middle;
+	width: 55%;
+	margin-left: 5%;
+	color: #ffffff;
+}
+.footer .txt p{
+	margin: 0;
+	margin-bottom: 0.5%;
+}
+.logo_box{
+	width: 34%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.logo_box .logo_w{
+	float: right;
+	width: 269px;
+	height: 92px;
+	background: url(../img/logo4.png) no-repeat bottom right;
+	background-size: 100%;
+}
+.logo_box .logo_r{
+	float: right;
+	width: 53%;
+	background: url(../img/logo5.png) no-repeat bottom right;
+	background-size: 100%;
+	padding-bottom: 11%;
+}
+.logo_box .logo_w{
+	float: right;
+	width: 167px;
+	height: 57px;
+	background: url(../img/logo4.png) no-repeat bottom right;
+	background-size: 100%;
+}
+.footer{
+	padding: 5% 0;
+}
