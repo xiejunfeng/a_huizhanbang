@@ -289,10 +289,6 @@ body{
 
 
 
-
-.part1, .part2{
-	display: none;
-}
 .part3{
 	min-height: 1700px;
 	background: url(../img/index/part3_bg.png) repeat-x #d2e2ec;
@@ -368,6 +364,281 @@ body{
 }
 .part3 .article .con_txt{
 	padding-left: 30px;
+}
+
+.part4{
+	width:100%;
+	background-color: #f1f1f2;
+	padding: 80px 0 140px
+}
+.part4 .title{
+	width:935px;
+	height:119px;
+	margin:0 auto;
+	background: url(../img/index/part4_title.png)  center center no-repeat;
+}
+.part4 .con_img{
+	padding-top:200px;
+	width:837px;
+	height:282px;
+	margin:0 auto;
+	background: url(../img/index/part4_con.png)  center center no-repeat;
+}
+.part4 .num_box{
+	position: absolute;
+	right:100px;
+	top:100px;
+	width:314px;
+	height:131px;
+}
+.part4 .num_box .con_box{
+	width:50%;
+	float:left;
+	height:100%;
+	font-size:13px;
+	text-align: center;
+	font-weight: bold;
+}
+.part4 .num_box .img_box{
+	height:130px;
+	width:100%;
+	position: relative;
+}
+.part4 .num_box .img_box span{
+	display:block;
+	position:absolute;
+	width:106px;
+	height:100%;
+}
+.part4 .num_box .img_box span.num0{
+	background: url(../img/index/par4_num_0.png)  center center no-repeat;
+}
+.part4 .num_box .img_box span.num1{
+	background: url(../img/index/par4_num_1.png)  center center no-repeat;
+}
+.part4 .num_box .img_box span.num2{
+	background: url(../img/index/par4_num_2.png)  center center no-repeat;
+}
+.part4 .num_box .img_box span.num3{
+	background: url(../img/index/par4_num_3.png)  center center no-repeat;
+}
+.part4 .num_box .img_box span.num4{
+	background: url(../img/index/par4_num_4.png)  center center no-repeat;
+}
+.part4 .num_box .img_box span.num5{
+	background: url(../img/index/par4_num_5.png)  center center no-repeat;
+}
+.part4 .num_box .img_box span.num6{
+	background: url(../img/index/par4_num_6.png)  center center no-repeat;
+}
+.part4 .num_box .img_box span.num7{
+	background: url(../img/index/par4_num_7.png)  center center no-repeat;
+}
+.part4 .num_box .img_box span.num8{
+	background: url(../img/index/par4_num_8.png)  center center no-repeat;
+}
+.part4 .num_box .img_box span.num9{
+	background: url(../img/index/par4_num_9.png)  center center no-repeat;
+}
+
+.part4 .num_box .img_box.red span.num0{
+	background: url(../img/index/par4_num_red_0.png)  center center no-repeat;
+}
+.part4 .num_box .img_box.red span.num1{
+	background: url(../img/index/par4_num_red_1.png)  center center no-repeat;
+}
+.part4 .num_box .img_box.red span.num2{
+	background: url(../img/index/par4_num_red_2.png)  center center no-repeat;
+}
+.part4 .num_box .img_box.red span.num3{
+	background: url(../img/index/par4_num_red_3.png)  center center no-repeat;
+}
+.part4 .num_box .img_box.red span.num4{
+	background: url(../img/index/par4_num_red_4.png)  center center no-repeat;
+}
+.part4 .num_box .img_box.red span.num5{
+	background: url(../img/index/par4_num_red_5.png)  center center no-repeat;
+}
+.part4 .num_box .img_box.red span.num6{
+	background: url(../img/index/par4_num_red_6.png)  center center no-repeat;
+}
+.part4 .num_box .img_box.red span.num7{
+	background: url(../img/index/par4_num_red_7.png)  center center no-repeat;
+}
+.part4 .num_box .img_box.red span.num8{
+	background: url(../img/index/par4_num_red_8.png)  center center no-repeat;
+}
+.part4 .num_box .img_box.red span.num9{
+	background: url(../img/index/par4_num_red_9.png)  center center no-repeat;
+}
+.part4 .num_box .img_box span.first{
+	top:0;
+	left:-8px;
+}
+.part4 .num_box .img_box span.second{
+	top:0;
+	right:-8px;
+}
+.part4 .con_box .txt{
+	margin-top:-12px;
+	color: #616161;
+}
+.part4 .btn_box{
+	padding-top: 40px;
+}
+.part4 .btn_box a{
+	display:block;
+	width:275px;
+	height:61px;
+	margin:0 auto;
+	background: url(../img/index/part4_btn.png)  center center no-repeat;
+}
+
+.part5{
+	width:100%;
+	padding: 110px 0 50px;
+	background-color: #7fa3cb;
+}
+.part5 .title{
+	width:510px;
+	height:99px;
+	padding-bottom:50px;
+	margin:0 auto;
+	background: url(../img/index/part5_title.png)  center center no-repeat;
+}
+.part5 .con_img{
+	width:607px;
+	height:126px;
+	margin:0 auto;
+	padding-bottom:80px;
+	background: url(../img/index/part5_con_img.png)  center center no-repeat;
+}
+.part5 .btn_box a{
+	display:block;
+	width:275px;
+	height:61px;
+	margin:0 auto;
+	background: url(../img/index/part5_btn.png)  center center no-repeat;
+}
+.part5 .con_box{
+	padding-top:80px;
+	margin:0 auto;
+	width:1150px;
+}
+.part5 .con_box .cell{
+	padding:10px;
+	width:518px;
+	background-color: #6ba7f0;
+}
+.part5 .con_box .lf{
+	float:left;
+}
+.part5 .con_box .rf{
+	float:right;
+}
+.part5 .img_cell{
+	width:518px;
+	position: relative;
+	height:298px;
+}
+.part5 .img_cell img{
+	width:100%;
+	height:100%;
+}
+.part5 .txt{
+	position: absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+}
+
+.part5 .txt_inner{
+	padding:10px 30px;
+	text-align: right;
+	color:#FFFFFF;
+	font-size:25px;
+	font-weight:700;
+	background-color: rgba(153,185,235,.7)
+}
+.part5 .con_box .rf .txt_inner{
+	text-align: left;
+}
+.part5 .txt_list{
+	padding: 20px;
+	position: relative;
+	background-color: #b1d0f7;
+}
+.part5 .txt_list p{
+	margin:0 0 10px 0;
+	color:#515362;
+	font-size:22px;
+	font-weight: bold;
+}
+.part5 .txt_list p:last-child{
+	margin-bottom: 0
+}
+
+.part6{
+	width:100%;
+	padding: 100px 0 40px;
+	background-color: #e5edf6;
+}
+.part6 .title{
+	margin: 0 auto;
+	width: 879px;
+	height: 56px;
+	padding-bottom: 100px;
+	background: url(../img/index/part6_title.png)  0 0 no-repeat;
+}
+.part6 .con_box{
+	width: 1070px;
+	margin: 0 auto;
+}
+.part6 .con_box .cell{
+	width: 490px;
+	padding-top: 25px;
+	float: left;
+	position: relative;
+}
+.part6 .con_box .cell_inner_top{
+	width: 100%;
+	padding-top: 70px;
+	background: url(../img/index/part6_box_top.png)  0 0 no-repeat;
+}
+.part6 .con_box .cell_inner_bottom{
+	width: 100%;
+	padding-bottom: 70px;
+	background: url(../img/index/part6_box_bottom.png)  bottom left no-repeat;
+}
+.part6 .con_box .cell_inner_center{
+	width: 100%;
+	background: url(../img/index/part6_box_center.png)  0 0 repeat-y;
+}
+.part6 .con_box .cell_inner_txt{
+	min-height: 300px;
+	padding: 220px 60px 20px 60px;
+	color: #FFFFFF;
+	font-size: 14.5px;
+}
+.part6 .cell  .img_box{
+	position: absolute;
+	left: 50%;
+	top:-40px;
+	margin-left: -145px;
+	width: 270px;
+	height: 306px;
+	border: 6px solid #8799b9;
+	border-radius: 8px;
+}
+.part6 .cell .img_box img{
+	width: 100%;
+	height: 100%;
+	border-radius: 8px
+}
+
+
+.part1, .part2, .part3, .part4, .part5,.part6{
+	display: none;
 }
 
 
