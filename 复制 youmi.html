@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content=" initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="Shortcut Icon" href="" type="image/x-icon" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="purple" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="format-detection" content="email=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="css/footer.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="css/youomi.css" media="all" />
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/resize.js"></script>
+		<script type="text/javascript" src="js/jquery.DB_gallery.js"></script>
+		<!-- build:css /styles/base.css -->
+		<!-- endbuild -->
+		<title>会展邦</title>
+	</head>
+
+	<body>
+		<div class="main">
+			<div class="part1"></div>
+			<div class="part2"></div>
+			<div class="part3"></div>
+			<div class="part4"></div>
+			<div class="part5">
+				<div class="title"></div>
+				<div class="clearfix">
+					<div class="list_wapper">
+						<ul class="list_ul">
+							<li class="active">
+								<p>我是测试文字</p>
+							</li>
+							<li>
+								<p>我是测试文字</p>
+							</li>
+							<li>
+								<p>我是测试文字</p>
+							</li>
+							<li>
+								<p>我是测试文字</p>
+							</li>
+							<li>
+								<p>我是测试文字</p>
+							</li>
+							<li>
+								<p>我是测试文字</p>
+							</li>
+						</ul>
+					</div>
+					<div class="img_wapper" id="DB_gallery">
+						<div class="img_box DB_imgWin">
+							<a href="javascript:;"><img src="img/youmi/test.png" /></a>
+						</div>
+						<div class="img_list_wapper">
+							<a class="left" href="javascript:;"></a>
+							<div class="img_list_box DB_thumSet">
+								<ul class="img_list_ul clearfix DB_thumMove">
+									<li class="on">
+										<div class="shadow"></div>
+										<a href="javascript:;"><img src="img/youmi/test1.png" /></a>
+									</li>
+									<li>
+										<div class="shadow"></div>
+										<a href="javascript:;"><img src="img/youmi/test1.png" /></a>
+									</li>
+									<li>
+										<div class="shadow"></div>
+										<a href="javascript:;"><img src="img/youmi/test1.png" /></a>
+									</li>
+									<li>
+										<div class="shadow"></div>
+										<a href="javascript:;"><img src="img/youmi/test1.png" /></a>
+									</li>
+								</ul>
+							</div>
+							<a class="right" href="javascript:;"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+				(function() {
+					var timmer = null;
+					var doResize = function(){
+						var windowWidth = document.documentElement && document.documentElement.clientWidth || document.body.clientWidth || window.innerWidth;
+						var  r_size = 1920;
+						var $pad = $('.content_pad');
+						if(windowWidth < 500){
+							$('.footer').find('p').hide();
+						}else{
+							$('.footer').find('p').show()
+						}
+						if(timmer)clearTimeout(timmer);
+						timmer = setTimeout(function(){
+							myResize(r_size);
+						},100);
+					}
+					$(window).resize(doResize);
+					doResize();
+					
+//					var doImgLength = function(){
+//						
+//						var $box = $('.img_list_box ul');
+//						
+//						$box.each(function(){
+//							var width = $(this).find('li').eq(0).width() + parseInt($(this).find('li').eq(0).css('margin-right'));
+//							var length = $(this).find('li').length;
+//							$(this).width(width *length);
+//						});
+//						
+//					};
+//					doImgLength();
+//					$('.img_list_wapper a').click(function(){
+//						var $box = $(this).parent();
+//						var width = $box.find('li').eq(0).width() + parseInt($box.find('li').eq(0).css('margin-right'));
+//						console.log(width);
+//						console.log();
+//						$(this).find('ul').css('margin-left',width);
+//					})
+
+					$('#DB_gallery').DB_gallery({
+
+						thumWidth:110,            
+				
+						thumGap:8,                
+				
+						thumMoveStep:4,           
+				
+						moveSpeed:300,            
+				
+						fadeSpeed:500            
+				
+					});
+				})();
+		</script>
+
+	</body>
+
+</html>

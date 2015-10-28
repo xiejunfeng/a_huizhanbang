@@ -1,0 +1,159 @@
+body{
+	font-family: "微软雅黑";
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.part1{
+	height: 1085px;
+	background: url(../img/youmi/part1_bg.png) no-repeat;	
+	background-size: 100%;
+}
+.part2{
+	height: 1080px;
+	margin-top: -2px;
+	background: url(../img/youmi/part2_bg.png) no-repeat;	
+	background-size: 100%;
+}
+.part3{
+	height: 1095px;
+	background: url(../img/youmi/part3_bg.png) no-repeat;	
+	background-size: 100%;
+}
+.part4{
+	height: 1081px;
+	margin-top: -2px;
+	background: url(../img/youmi/part4_bg.png) no-repeat;	
+	background-size: 100%;
+}
+.part5{
+	position: relative;
+	height: 1084px;
+	background: url(../img/youmi/part5_bg.png) no-repeat;	
+	background-size: 100%;
+}
+.part5 .title{
+	height: 150px;
+}
+.list_wapper{
+	margin-left: 140px;
+	float: left;
+	height: 850px;
+	font-size: 32px;
+	overflow: hidden;
+}
+
+.list_ul{
+	color: #FFFFFF;
+}
+.list_ul  li{
+	margin-bottom: 30px;
+	padding: 3px;
+	cursor: pointer;
+}
+.list_ul  li.active{
+	background-color: rgba(0,0,0,.3);
+}
+.list_ul p{
+	margin:  0;
+	padding: 20px 40px;
+	min-width: 350px;
+	background: url(../img/youmi/line_bg.png) repeat-y 0 0;
+}
+.list_ul .active p{
+	background: rgba(217,0,18,.5);
+}
+
+
+.img_wapper{
+	width: 1110px;
+	float: right;
+	margin-right: 120px;
+}
+.img_box{
+	width: 100%;
+	height: 635px;
+}
+
+.img_box img{
+	width: 100%;
+	height: 100%;
+}
+.img_list_wapper{
+	position: relative;
+}
+.img_list_wapper a.arrow{
+	display: block;
+	width: 56px;
+	height: 56px;
+	position: absolute;
+	top: 50%;
+	margin-top: -23px;
+	background: url(../img/youmi/arrow_left.png) center center no-repeat;
+}
+.img_list_wapper a.left{
+	left: -65px;
+}
+.img_list_wapper a.right{
+	right: -65px;
+	background-image: url(../img/youmi/arrow_right.png);
+}
+.img_list_wapper a.left:hover{
+	background-image: url(../img/youmi/arrow_left_hover.png);
+}
+.img_list_wapper a.right:hover{
+	background-image: url(../img/youmi/arrow_right_hover.png);
+}
+.img_list_box{
+	padding-top: 20px;
+	width: 100%;
+	overflow: hidden;
+}
+.img_list_ul{
+	position: relative;
+}
+.img_list_ul li{
+	float: left;
+	width: 350px;
+	height: 200px;
+	margin-right: 20px;
+	position: relative;
+}
+.img_list_ul li .shadow{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../img/youmi/shadow.png);
+}
+.img_list_ul li.on .shadow{
+	display: block;
+}
+.img_list_ul img{
+	width: 100%;
+	height: 100%;
+}
+.logo_box{
+	background: url(../img/youmi/line_bg_1.png) no-repeat center center;
+}
+.logo_w_wapper{
+	float: left;
+	width: 48%;
+}
+.logo_box .logo_w{
+	width: 95%;
+	float: none;
+	padding-bottom: 32%;
+}
+.logo_box .logo_r{
+	width: 45%;
+	background: url(../img/logo6.png) no-repeat bottom right;
+	background-size: 100%;
+	padding-bottom: 16%;
+}
+
+
