@@ -19,13 +19,15 @@
 	width: 34%;
 	display: inline-block;
 	vertical-align: middle;
+	background: url(../img/line.png) no-repeat bottom right;
+	background-size: 100%;
 }
 .logo_box .logo_w{
-	float: right;
-	width: 269px;
-	height: 92px;
+	float: left;
+	width: 33%;
 	background: url(../img/logo4.png) no-repeat bottom right;
 	background-size: 100%;
+	padding-bottom: 11%;
 }
 .logo_box .logo_r{
 	float: right;
@@ -33,13 +35,6 @@
 	background: url(../img/logo5.png) no-repeat bottom right;
 	background-size: 100%;
 	padding-bottom: 11%;
-}
-.logo_box .logo_w{
-	float: right;
-	width: 167px;
-	height: 57px;
-	background: url(../img/logo4.png) no-repeat bottom right;
-	background-size: 100%;
 }
 .footer{
 	padding: 5% 0;

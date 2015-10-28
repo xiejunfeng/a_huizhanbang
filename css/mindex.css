@@ -85,22 +85,24 @@ body{
 
 .part .content{
 	width: 100%;
+	padding-bottom: 100px;
 }
 .part2{
-	background-color: #fbfbfb;
+	/*background:url(../img/mindex/part2_bg.png) center center repeat-x #dddddd;*/
+	background-color: #f6f6f6;
 }
 .part2 .title{
-	width: 89.5%;
-	margin: 2% auto 0;
-	height: 58px;
-	background: url(../img/index/part2_tit.png) center center no-repeat;
+	width: 640px;
+	margin:0 auto 0;
+	height: 38px;
+	background: url(../img/mindex/part2_title.png) center center no-repeat;
 }
 .timeless_wapper{
 	position: relative;
-	width: 1300px;
-	margin: 0 auto;
+	width: 100%;
+	margin: 50px auto 0;
 	overflow: hidden;
-	height: 880px;
+	height: 1500px;
 }
 .part2 .timeless_box{
 	height: 100%;
@@ -109,11 +111,12 @@ body{
 }
 .part2 .timeline{
 	position: absolute;
-	border-top: 1px solid #b1b1b1;
-	border-bottom: 1px solid #4d4d4d;
-	width: 1000%;
-	top: 50%;
-	right: 0;
+	border-left: 1px solid #b1b1b1;
+	border-right: 1px solid #4d4d4d;
+	margin-right: -2px;
+	height: 100%;
+	top: 0;
+	left: 50%;
 }
 .part2 .timeline .arrow{
 	display: block;
@@ -128,10 +131,13 @@ body{
 }
 .part2 .time_con{
 	position: absolute;
-	right: 0;
+	right: -260px;
 	width: 240px;
-	height: 235px;
+	height: 201px;
 	text-align: center;
+}
+.part2 .time_con.down{
+	right: 40px;
 }
 .part2 .time_con a{
 	display: block;
@@ -147,30 +153,45 @@ body{
 .part2 .time_con .txt{
 	font-size: 28px;
 	font-weight: 700;
-	position: absolute;
-	left: 0;
 }
 .part2 .time_add{
 	position: absolute;
-	top: -13px;
-	right: 0;
+	top: 0;
+	right: -13.5px;
 	text-align: center;
 	font-size: 28px;
 }
+.part2 .time_add .date{
+	position: absolute;
+	top: -8px;
+	left: -72px;
+}
+.part2 .time_add.down .date{
+	position: absolute;
+	top: -4px;
+	left: 40px;
+	width: 100px;
+	text-align: left;
+}
 .part2 .time_add .img{
-	margin: 0 auto 4px;
+	margin: 0 auto;
 	width: 26px;
-	height: 26px;
-	background: url(../img/index/time_add_y.png) center center no-repeat #fdfdfd;
+	height: 30px;
+	background: url(../img/index/time_add_y.png) center center no-repeat #f6f6f6;
 }
 .part2  .mouth{
 	position: absolute;
-	bottom: 12px;
-	font-size: 36px;
+	left: 20px;
+	font-size: 32px;
+	width: 100px;
+	text-align: left;
 	font-weight: 700;
 }
 .part2 .time_add.yellow{
 	color: #f2c43b;
+}
+.part2 .time_con.up2{
+	right: -280px;
 }
 
 
@@ -196,80 +217,53 @@ body{
 	color: #99b952;
 }
 
-.part2 .time_con.up{
-	bottom: 20px;
-}
-.part2 .time_con.up2{
-	bottom: 40px;
-}
-
-.part2 .time_con.up .txt{
-	top: 0;
-	padding-bottom: 5%;
-	transform: translateY(-100%);
-	-webkit-transform: translateY(-100%);
-}
-.part2 .time_con.down{
-	top: 20px;
-}
-.part2 .time_con.down .txt{
-	bottom: 0;
-	padding-top: 5%;
-	transform: translateY(100%);
-	-webkit-transform: translateY(100%);
-}
-.part2 .time_add.down{
-	top: 15px;
-	transform: translateY(-100%);
-	-webkit-transform: translateY(-100%);
-}
 .part2 .time_add.purple .img{
-	background: url(../img/index/time_add_b.png) center center no-repeat #fdfdfd;
+	background: url(../img/index/time_add_b.png) center center no-repeat #f6f6f6;
 }
 .part2 .time_add.blue .img{
-	background: url(../img/index/time_add_bl.png) center center no-repeat #fdfdfd;
+	background: url(../img/index/time_add_bl.png) center center no-repeat #f6f6f6;
 }
 .part2 .time_add.orange .img{
-	background: url(../img/index/time_add_orange.png) center center no-repeat #fdfdfd;
+	background: url(../img/index/time_add_orange.png) center center no-repeat #f6f6f6;
 }
 .part2 .time_add.pink .img{
-	background: url(../img/index/time_add_pink.png) center center no-repeat #fdfdfd;
+	background: url(../img/index/time_add_pink.png) center center no-repeat #f6f6f6;
 }
 .part2 .time_add.black .img{
-	background: url(../img/index/time_add_black.png) center center no-repeat #fdfdfd;
+	background: url(../img/index/time_add_black.png) center center no-repeat #f6f6f6;
 }
 .part2 .time_add.green .img{
-	background: url(../img/index/time_add_green.png) center center no-repeat #fdfdfd;
+	background: url(../img/index/time_add_green.png) center center no-repeat #f6f6f6;
 }
 .part2 .time_con.yellow a{
-	background: url(../img/index/circle_yellow.png) bottom right no-repeat #fdfdfd;
+	background: url(../img/mindex/circle_yellow.png) bottom right no-repeat;
 }
 .part2 .time_con.blue a{
-	background: url(../img/index/circle_blue.png) bottom right no-repeat #fdfdfd;
+	background: url(../img/mindex/circle_blue.png) bottom right no-repeat;
 }
 .part2 .time_con.purple a{
-	background: url(../img/index/circle_purple.png) bottom right no-repeat #fdfdfd;
+	background: url(../img/mindex/circle_purple.png) bottom right no-repeat;
 }
 .part2 .time_con.orange a{
-	background: url(../img/index/circle_orange.png) bottom right no-repeat #fdfdfd;
+	background: url(../img/mindex/circle_orange.png) bottom right no-repeat;
 }
 .part2 .time_con.pink a{
-	background: url(../img/index/circle_pink.png) bottom right no-repeat #fdfdfd;
+	background: url(../img/mindex/circle_pink.png) bottom right no-repeat;
 }
 .part2 .time_con.black a{
-	background: url(../img/index/circle_black.png) bottom right no-repeat #fdfdfd;
+	background: url(../img/mindex/circle_black.png) bottom right no-repeat;
 }
 .part2 .time_con.green a{
-	background: url(../img/index/circle_green.png) bottom right no-repeat #fdfdfd;
+	background: url(../img/mindex/circle_green.png) bottom right no-repeat;
 }
-.part2 .time_con.yellow img{
-	margin: 12px 21px 0 0;
+.part2 .time_con.up img{
+	margin: 12px 10px 0 0;
 }
-.part2 .time_con.blue img{
+.part2 .time_con.down img{
+	margin: 12px 37px 0 0;
+}
+/*.part2 .time_con.blue img{
 	margin: 12px 34px 0 0;
-}
-.part2 .time_con.purple img{
-	margin: 70px 34px 0 0;
 }
 .part2 .time_con.orange img{
 	margin: 70px 36px 0 0;
@@ -282,7 +276,7 @@ body{
 }
 .part2 .time_con.black img{
 	margin: 23px 33px 0 0;
-}
+}*/
 
 
 
@@ -404,26 +398,16 @@ body{
 }
 .part5 .con_box .cell{
 	padding:10px;
-	width:300px;
+	width:90%;
+	margin: 0 auto 30px;
 	background-color: #6ba7f0;
 }
-.part5 .con_box .lf{
-	float:left;
-}
-.part5 .con_box .rf{
-	float:right;
-	position: relative;
-	z-index: 9;
-	margin-top: -150px;
-}
 .part5 .img_cell{
-	width:300px;
+	width:100%;
 	position: relative;
-	height:185px;
 }
 .part5 .img_cell img{
 	width:100%;
-	height:100%;
 }
 .part5 .txt{
 	position: absolute;
@@ -439,9 +423,6 @@ body{
 	font-size:18px;
 	font-weight:700;
 	background-color: rgba(153,185,235,.7)
-}
-.part5 .con_box .rf .txt_inner{
-	text-align: left;
 }
 .part5 .txt_list{
 	padding: 20px;
@@ -519,11 +500,17 @@ body{
 	border-radius: 8px
 }
 
-
-.part1, .part3, .part2, .part4,.part5{
-	display: none;
+.logo_box{
+	background: none;
 }
 
+.logo_box .logo_w{
+	float: right;
+	width: 190px;
+	height: 71px;
+	background: url(../img/logo4.png) no-repeat bottom right;
+	background-size: 100%;
+}
 
 
 

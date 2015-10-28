@@ -61,7 +61,7 @@ body{
 }
 .silder_bar{
 	z-index: 999;
-	position: fixed;
+	position: absolute;
 	top: 50%;
 	right: 0;
 	margin-right: 3%;
@@ -635,13 +635,17 @@ body{
 	height: 100%;
 	border-radius: 8px
 }
-
-
-.part1, .part2, .part3, .part4, .part5,.part6{
-	display: none;
+.logo_box{
+	background: none;
 }
 
-
+.logo_box .logo_w{
+	float: right;
+	width: 269px;
+	height: 92px;
+	background: url(../img/logo4.png) no-repeat bottom right;
+	background-size: 100%;
+}
 
 
 

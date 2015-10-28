@@ -10,8 +10,8 @@
 		<meta name="format-detection" content="email=no" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" media="all" />
-		<link rel="stylesheet" type="text/css" href="css/index.css" media="all" />
 		<link rel="stylesheet" type="text/css" href="css/footer.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" media="all" />
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/resize.js"></script>
 		<script type="text/javascript" src="js/xh.slide.js"></script>
@@ -23,6 +23,14 @@
 	<body>
 		<div class="main">
 			<div class="part part1" id="part1">
+				<div class="silder_bar">
+					<a href="javascript:;" class="active"></a>
+					<a href="javascript:;"></a>
+					<a href="javascript:;"></a>
+					<a href="javascript:;"></a>
+					<a href="javascript:;"></a>
+					<a href="javascript:;"></a>
+				</div>
 				<div class="banner">
 					<div class="banner_box" id="banner_box">
 						<ul id="BannerList">
@@ -45,6 +53,14 @@
 				</div>
 			</div>
 			<div id="part2" class="part part2">
+				<div class="silder_bar">
+					<a href="javascript:;"></a>
+					<a href="javascript:;"  class="active"></a>
+					<a href="javascript:;"></a>
+					<a href="javascript:;"></a>
+					<a href="javascript:;"></a>
+					<a href="javascript:;"></a>
+				</div>
 				<div class="content">
 					<div class="title"></div>
 					<div class="timeless_wapper">
@@ -137,6 +153,14 @@
 				</div>
 			</div>
 			<div class="part3 part" id="part3">
+				<div class="silder_bar">
+					<a href="javascript:;"></a>
+					<a href="javascript:;"></a>
+					<a href="javascript:;" class="active"></a>
+					<a href="javascript:;"></a>
+					<a href="javascript:;"></a>
+					<a href="javascript:;"></a>
+				</div>
 				<div class="title"></div>
 				<div class="intro_img">
 					<a href="#" class="part3_skip"></a>
@@ -222,6 +246,14 @@
 				</div>
 			</div>
 			<div class="part part4" id="part4">
+				<div class="silder_bar">
+					<a href="javascript:;"></a>
+					<a href="javascript:;"></a>
+					<a href="javascript:;"></a>
+					<a href="javascript:;" class="active"></a>
+					<a href="javascript:;"></a>
+					<a href="javascript:;"></a>
+				</div>
 				<div class="title"></div>
 				<div class="con_img"></div>
 				<div class="num_box">
@@ -245,6 +277,14 @@
 				</div>
 			</div>
 			<div class="part part5" id="part5">
+				<div class="silder_bar">
+					<a href="javascript:;"></a>
+					<a href="javascript:;"></a>
+					<a href="javascript:;"></a>
+					<a href="javascript:;"></a>
+					<a href="javascript:;" class="active"></a>
+					<a href="javascript:;"></a>
+				</div>
 				<div class="title"></div>
 				<div class="con_img"></div>
 				<div class="btn_box">
@@ -286,6 +326,20 @@
 				</div>
 			</div>
 			<div class="part part6" id="part6">
+				<div class="silder_bar">
+					<a href="javascript:;">
+					</a>
+					<a href="javascript:;">
+					</a>
+					<a href="javascript:;">
+					</a>
+					<a href="javascript:;">
+					</a>
+					<a href="javascript:;">
+					</a>
+					<a href="javascript:;" class="active">
+					</a>
+				</div>
 				<div class="title"></div>
 				<div class="con_box clearfix">
 					<div class="cell">
@@ -336,18 +390,6 @@
 					</div>
 				</div>
 			</div>
-			<div class="silder_bar">
-				<a href="#part1" class="active">
-				</a>
-				<a href="#part2">
-				</a>
-				<a href="#part3">
-				</a>
-				<a href="#part4">
-				</a>
-				<a href="#part5">
-				</a>
-			</div>
 			<div class="footer">
 				<div class="txt">
 					<p>用户服务时间：9:30am~17:30pm</p>
@@ -386,6 +428,7 @@
 					}
 					$(window).resize(doResize);
 					doResize();
+					
 				})();
 		</script>
 
